@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
     # helper_method :current_user
     helper_method :user_signed_in?
-    # before_action :authenticate_use
+    before_action :authenticate_user
 
     def app_response(message: 'success', status: 200, data: nil)
         render json: {

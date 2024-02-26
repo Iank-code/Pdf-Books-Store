@@ -6,10 +6,13 @@
     </div>
 
     <div class="child child-2">
-        <% if user_signed_in? %>
+        <% if !user_signed_in? %>
             <%= link_to 'Register', new_user_path, class: 'sign_out', method: :delete %>
+            <%= link_to 'Login', new_session_path, class: 'sign_out', method: :delete %>
+        <% end %>
+        <% if user_signed_in? %>
+            <%= link_to 'Sign Out', signout_path, class: 'sign_out', method: :delete %>
         <% end %>
         
-        <button>Sign In</button>
     </div>
 </div>

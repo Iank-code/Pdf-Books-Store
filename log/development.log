@@ -6023,3 +6023,2658 @@ Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 18:31:17 +0300
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
 Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240226152723)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20240226152723'[0m
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240226202223)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240226202223') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2024-02-26 23:25:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 105.7ms | Allocations: 37474)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 13.6ms | Allocations: 842)
+  Rendered layouts/_navbar.html.erb (Duration: 5.4ms | Allocations: 691)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 180.1ms | Allocations: 55986)
+Completed 200 OK in 207ms (Views: 182.1ms | ActiveRecord: 1.8ms | Allocations: 72920)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:25:10 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:25:10 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-26 23:25:17 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.2ms | Allocations: 2822)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3099)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3174)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3621)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: user) do |form| %>
+    2:   <% if user.errors.any? %>
+    3:     <div style="color: red">
+    4:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    5: 
+  
+app/views/users/_form.html.erb:2
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:25:17 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Started GET "/users/new" for ::1 at 2024-02-26 23:27:46 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.8ms | Allocations: 5708)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 6011)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 24600)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 25546)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:27:47 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:27:47 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users/new" for ::1 at 2024-02-26 23:29:02 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/users/new" for ::1 at 2024-02-26 23:29:02 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.1ms | Allocations: 4073)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4164)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.5ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 8.1ms | Allocations: 558)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 6929)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 7231)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:29:02 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-26 23:29:02 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:29:02 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users/new" for ::1 at 2024-02-26 23:29:20 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/users/new" for ::1 at 2024-02-26 23:29:20 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.0ms | Allocations: 4067)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4144)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 555)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 6893)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 7195)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:29:20 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-26 23:29:20 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:29:20 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:40:20 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.5ms | Allocations: 5884)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 6187)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 687)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 24760)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 25706)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:40:27 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:40:27 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:40:35 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 5939)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 6242)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 2.9ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 24831)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 25776)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:40:42 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:40:42 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:40:44 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 5959)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 6266)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 24861)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 25809)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-26 23:40:52 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:40:52 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users/new" for ::1 at 2024-02-26 23:41:07 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/users/new" for ::1 at 2024-02-26 23:41:08 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.2ms | Allocations: 5955)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 6258)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 687)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 24751)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 25649)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:41:08 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-26 23:41:08 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:41:08 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:41:14 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 14.0ms | Allocations: 4194)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 4466)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 4542)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 5466)
+
+
+  
+ActionView::Template::Error (undefined method `labjel' for #<ActionView::Helpers::FormBuilder:0x00007f896d960200 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x00000000025df0>, @object=nil, @object_name=nil, @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  label):
+    12:   </div>
+    13: 
+    14:   <div>
+    15:     <%= form.labjel :password, style: "display: block" %>
+    16:     <%= form.text_field :password %>
+    17:   </div>
+    18: 
+  
+app/views/users/_form.html.erb:15
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-26 23:41:20 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:41:20 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-26 23:42:50 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.2ms | Allocations: 5915)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6218)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 24807)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 25751)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:42:50 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:42:50 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users/new" for ::1 at 2024-02-26 23:43:03 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+Started GET "/users/new" for ::1 at 2024-02-26 23:43:03 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.1ms | Allocations: 5079)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 5156)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.4ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 558)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 7921)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 8223)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:43:03 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-26 23:43:03 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:43:03 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:47:05 +0300
+  
+ArgumentError (Before process_action callback :authenticate_user has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-26 23:47:12 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:47:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/new.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/new.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-26 23:47:28 +0300
+  
+ArgumentError (Before process_action callback :authenticate_user has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/new.html.erb"], :force_reload=>false}
+Started GET "/users/new" for ::1 at 2024-02-26 23:47:38 +0300
+  
+ArgumentError (Before process_action callback :authenticate_user has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users/new" for ::1 at 2024-02-26 23:47:59 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.8ms | Allocations: 2597)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2895)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 21485)
+Completed 200 OK in 97ms (Views: 30.1ms | ActiveRecord: 2.4ms | Allocations: 109897)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:48:00 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:48:00 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users" for ::1 at 2024-02-26 23:48:13 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"test", "email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1418)
+
+
+Started POST "/users" for ::1 at 2024-02-26 23:48:29 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"test", "email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :name. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f896c8bde98>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"test", "email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["username", nil], ["email", "test@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-26 20:48:29.636138"], ["updated_at", "2024-02-26 20:48:29.636138"]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 303ms (ActiveRecord: 11.0ms | Allocations: 8495)
+
+
+Started GET "/" for ::1 at 2024-02-26 23:48:29 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2407)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 686)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 20718)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.1ms | Allocations: 22351)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:48:36 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:48:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users" for 127.0.0.1 at 2024-02-26 23:53:37 +0300
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:7:in `app_response'
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 2.0ms | Allocations: 5020)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:53:46 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:53:46 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/users/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-26 23:54:09 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2680)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.2ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 689)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 21040)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 2.1ms | Allocations: 22863)
+
+
+Started GET "/cable" for ::1 at 2024-02-26 23:54:15 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:54:15 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for ::1 at 2024-02-26 23:54:28 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1963)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 555)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4528)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 4855)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-26 23:54:28 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-26 23:54:28 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:54:28 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-26 23:57:23 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2668)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 690)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 20933)
+Completed 200 OK in 45ms (Views: 34.9ms | ActiveRecord: 2.6ms | Allocations: 22756)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-26 23:57:31 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-26 23:57:31 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-26 23:57:32 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2678)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 14.5ms | Allocations: 4893)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 25032)
+Completed 422 Unprocessable Entity in 42ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 26910)
+
+
+Started GET "/" for ::1 at 2024-02-26 23:57:32 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1951)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.3ms | Allocations: 772)
+  Rendered layouts/_navbar.html.erb (Duration: 13.3ms | Allocations: 4613)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 8517)
+Completed 422 Unprocessable Entity in 24ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 8893)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-26 23:58:04 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2668)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 12.6ms | Allocations: 4822)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 24855)
+Completed 422 Unprocessable Entity in 39ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 26732)
+
+
+Started GET "/" for ::1 at 2024-02-26 23:58:49 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1954)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.7ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 15.6ms | Allocations: 4615)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 8508)
+Completed 422 Unprocessable Entity in 31ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 8884)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:00:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+Completed 422 Unprocessable Entity in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4858)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:00:57 +0300
+Processing by BooksController#index as HTML
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3094)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:01:04 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 147.4ms | Allocations: 23453)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 842)
+  Rendered layouts/_navbar.html.erb (Duration: 18.7ms | Allocations: 5690)
+  Rendered layout layouts/application.html.erb (Duration: 186.0ms | Allocations: 46842)
+Completed 422 Unprocessable Entity in 217ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 62134)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-02-27 00:02:58 +0300
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 0.9ms | Allocations: 87927)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:03:32 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2059)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 12.6ms | Allocations: 4841)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 24279)
+Completed 422 Unprocessable Entity in 37ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 26156)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:04:10 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2055)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 13.8ms | Allocations: 4841)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 24261)
+Completed 422 Unprocessable Entity in 57ms (Views: 0.3ms | ActiveRecord: 8.3ms | Allocations: 26134)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:04:52 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2059)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 839)
+  Rendered layouts/_navbar.html.erb (Duration: 14.8ms | Allocations: 4846)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 24367)
+Completed 422 Unprocessable Entity in 60ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 26242)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:06:15 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2063)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 16.6ms | Allocations: 4845)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 24363)
+Completed 422 Unprocessable Entity in 56ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 26243)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:06:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 51.8ms | Allocations: 22853)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 848)
+  Rendered layouts/_navbar.html.erb (Duration: 15.9ms | Allocations: 5726)
+  Rendered layout layouts/application.html.erb (Duration: 107.9ms | Allocations: 46311)
+Completed 422 Unprocessable Entity in 165ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 63223)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:06:46 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1361)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 22.8ms | Allocations: 4640)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 7942)
+Completed 422 Unprocessable Entity in 36ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 8329)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:11:24 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2059)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 832)
+  Rendered layouts/_navbar.html.erb (Duration: 15.8ms | Allocations: 5183)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 24609)
+Completed 422 Unprocessable Entity in 43ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 26485)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:12:05 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2067)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 779)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 20530)
+Completed 200 OK in 45ms (Views: 29.6ms | ActiveRecord: 3.2ms | Allocations: 22363)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:12:05 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:05 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:12:18 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 2678)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2974)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 563)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 5747)
+Completed 200 OK in 98ms (Views: 16.8ms | ActiveRecord: 0.8ms | Allocations: 93000)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:12:19 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:19 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:19 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/users" for ::1 at 2024-02-27 00:12:21 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1125)
+
+
+Started GET "/users" for ::1 at 2024-02-27 00:12:22 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 844)
+
+
+Started GET "/users" for ::1 at 2024-02-27 00:12:23 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 854)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:23 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:12:29 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:29 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:12:51 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1642)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1940)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.3ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 786)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 20646)
+Completed 200 OK in 129ms (Views: 40.3ms | ActiveRecord: 2.9ms | Allocations: 25831)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 00:12:59 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:12:59 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:13:00 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.0ms | Allocations: 1638)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1934)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 1348)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 20900)
+Completed 422 Unprocessable Entity in 37ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 26085)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:13:00 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.1ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1042)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 1316)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4502)
+Completed 422 Unprocessable Entity in 15ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4901)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/users/new" for ::1 at 2024-02-27 00:13:52 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 811)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 20545)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 2.0ms | Allocations: 25630)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:13:52 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:13:52 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for ::1 at 2024-02-27 00:13:53 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1710)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 576)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4289)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 5207)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:14:34 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 1257)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 20686)
+Completed 422 Unprocessable Entity in 29ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 22590)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:14:34 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1338)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4607)
+Completed 422 Unprocessable Entity in 41ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 5016)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:14:59 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 841)
+  Rendered layouts/_navbar.html.erb (Duration: 17.0ms | Allocations: 5294)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 24909)
+Completed 422 Unprocessable Entity in 55ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 26780)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:15:02 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1337)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.7ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 20.0ms | Allocations: 5040)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 8329)
+Completed 422 Unprocessable Entity in 32ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 8706)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:15:17 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 820)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 20462)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 2.1ms | Allocations: 22278)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:15:17 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:15:17 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:15:20 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 1628)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1914)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4718)
+Completed 200 OK in 24ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 8680)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 00:15:37 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 2.6ms | Allocations: 1070)
+  Rendered books/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1359)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4158)
+Completed 200 OK in 33ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 31513)
+
+
+Started GET "/books" for ::1 at 2024-02-27 00:15:40 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1335)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3943)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 4271)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 00:15:41 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.3ms | Allocations: 597)
+  Rendered books/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 672)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3471)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3801)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 00:15:42 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.5ms | Allocations: 598)
+  Rendered books/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 673)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3472)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3802)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:21:51 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.5ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1028)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3832)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4150)
+
+
+Started POST "/users" for ::1 at 2024-02-27 00:21:59 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Ian_Code", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 1522)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1626)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1701)
+Completed 422 Unprocessable Entity in 289ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3182)
+
+
+Started POST "/users" for ::1 at 2024-02-27 00:22:04 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Ian_Code", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 1517)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1649)
+Completed 422 Unprocessable Entity in 323ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2754)
+
+
+Started POST "/users" for ::1 at 2024-02-27 00:22:05 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Ian_Code", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 1517)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1649)
+Completed 422 Unprocessable Entity in 292ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2754)
+
+
+Started POST "/users" for ::1 at 2024-02-27 00:22:10 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Ian_Code", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.3ms | Allocations: 1517)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1574)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1649)
+Completed 422 Unprocessable Entity in 291ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2755)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:22:53 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.1ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1042)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3841)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4158)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:22:53 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:22:53 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:22:53 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/users" for ::1 at 2024-02-27 00:23:07 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"Ian_Code", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["username", "Ian_Code"], ["email", "kian99564@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-26 21:23:08.270410"], ["updated_at", "2024-02-26 21:23:08.270410"]]
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 304ms (ActiveRecord: 9.1ms | Allocations: 3332)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:23:08 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1362)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3970)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4301)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:23:13 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.0ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1028)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.2ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 3827)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 4145)
+
+
+Started GET "/users" for ::1 at 2024-02-27 00:23:14 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1054)
+
+
+Started GET "/users" for ::1 at 2024-02-27 00:23:14 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 921)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:23:14 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:23:35 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.4ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1042)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3841)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4158)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:23:35 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:23:35 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/session_helper.rb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/session_helper.rb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:25:26 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 826)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 20741)
+Completed 200 OK in 54ms (Views: 43.0ms | ActiveRecord: 1.9ms | Allocations: 25829)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:25:32 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:25:32 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/session_helper.rb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/session_helper.rb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:25:44 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.5ms | Allocations: 1641)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1937)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 824)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 20612)
+Completed 200 OK in 30ms (Views: 22.8ms | ActiveRecord: 1.6ms | Allocations: 25722)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:25:51 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:25:51 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/sessions_helper.rb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/helpers/sessions_helper.rb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:25:56 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 821)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 20569)
+Completed 200 OK in 35ms (Views: 26.5ms | ActiveRecord: 1.9ms | Allocations: 25658)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:26:03 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:26:03 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/sessions/new.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/sessions/new.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:27:03 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.7ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.8ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 821)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 20555)
+Completed 200 OK in 43ms (Views: 35.4ms | ActiveRecord: 1.8ms | Allocations: 25643)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/sessions/new.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 00:27:12 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:27:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/sessions/new.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/sessions/new.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:27:14 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1641)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1939)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.5ms | Allocations: 834)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 825)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 20682)
+Completed 200 OK in 46ms (Views: 36.2ms | ActiveRecord: 2.1ms | Allocations: 25794)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:27:17 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1710)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 605)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4323)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 5241)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:27:21 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:27:21 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:27:47 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.0ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 29.0ms | Allocations: 5229)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 24806)
+Completed 422 Unprocessable Entity in 74ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 29953)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:27:47 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1028)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 7.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 43.7ms | Allocations: 5039)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 8199)
+Completed 422 Unprocessable Entity in 77ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8579)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:27:51 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.5ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1028)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 21.9ms | Allocations: 5041)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 8202)
+Completed 422 Unprocessable Entity in 33ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 8568)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:28:55 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.6ms | Allocations: 1637)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1933)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 876)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 20621)
+Completed 200 OK in 35ms (Views: 26.3ms | ActiveRecord: 1.6ms | Allocations: 25709)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:28:55 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:28:55 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users" for ::1 at 2024-02-27 00:28:56 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/application_controller.rb:11:in `app_response'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:28:58 +0300
+  
+ArgumentError (Before process_action callback :authenticate_user has not been defined):
+  
+app/controllers/sessions_controller.rb:2:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:29:28 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:29:28 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2059)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 877)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 20613)
+Completed 200 OK in 36ms (Views: 31.1ms | ActiveRecord: 1.7ms | Allocations: 22442)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:29:28 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:29:28 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:29:30 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:29:30 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.8ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3968)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 4305)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:29:32 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:29:32 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3968)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 4304)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:37:24 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2024)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 809)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 20510)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 2.3ms | Allocations: 22349)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 00:37:31 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:37:31 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:37:51 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.0ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 2281)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 21699)
+Completed 422 Unprocessable Entity in 44ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 23589)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:37:51 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1351)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 759)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1986)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5284)
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 5667)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:37:54 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1988)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5259)
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 5641)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:38:11 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 14.8ms | Allocations: 5325)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 24837)
+Completed 422 Unprocessable Entity in 42ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 26727)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:40:07 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2064)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 877)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 20618)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 2.0ms | Allocations: 22456)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:40:08 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:40:08 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/signout" for ::1 at 2024-02-27 00:40:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/signout"):
+  
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:40:14 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 00:42:42 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:42:42 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:42:45 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:42:45 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2059)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 873)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 20595)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 1.4ms | Allocations: 22424)
+
+
+Started GET "/sessions" for ::1 at 2024-02-27 00:42:47 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/sessions" for ::1 at 2024-02-27 00:42:51 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:42:51 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 00:43:44 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2062)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 877)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 20616)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 1.9ms | Allocations: 22454)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:43:45 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:43:45 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:43:47 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 1626)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1912)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4741)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 8761)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:43:50 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:43:50 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1334)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.9ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3969)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 4306)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:43:51 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:43:51 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3968)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 4305)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:43:55 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:43:55 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3968)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 4304)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:43:56 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:43:56 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3968)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 4304)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:43:58 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.3ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.5ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3854)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 4180)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:44:13 +0300
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:44:13 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2053)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 874)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 20501)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 1.5ms | Allocations: 22331)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:44:14 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:44:14 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:44:15 +0300
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:44:15 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3968)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 4305)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:44:16 +0300
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 234)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:44:16 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3968)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 4304)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:44:17 +0300
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:44:17 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 764)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 636)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3977)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms | Allocations: 4314)
+
+
+Started GET "/logout" for ::1 at 2024-02-27 00:44:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:44:33 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/signout" for ::1 at 2024-02-27 00:45:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/signout"):
+  
+Started GET "/signout" for ::1 at 2024-02-27 00:45:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/signout"):
+  
+Started GET "/signout" for ::1 at 2024-02-27 00:45:09 +0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:45:09 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:45:09 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 1643)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1939)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 810)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 20657)
+Completed 200 OK in 34ms (Views: 24.3ms | ActiveRecord: 2.0ms | Allocations: 25900)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:45:09 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:45:09 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for ::1 at 2024-02-27 00:45:12 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 575)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3796)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4141)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:45:12 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:45:12 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:45:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for ::1 at 2024-02-27 00:45:14 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:45:14 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.9ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 575)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3796)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4142)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/users/new" for ::1 at 2024-02-27 00:46:21 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 16.6ms | Allocations: 1636)
+  Rendered users/new.html.erb within layouts/application (Duration: 28.3ms | Allocations: 1932)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.7ms | Allocations: 837)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 879)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 125.3ms | Allocations: 20691)
+Completed 200 OK in 181ms (Views: 135.2ms | ActiveRecord: 9.6ms | Allocations: 26119)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:46:23 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.6ms | Allocations: 956)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1045)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3875)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4220)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:46:23 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:46:23 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:46:24 +0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1124)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.0ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3952)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4534)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:46:30 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"another@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "another@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1405)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1480)
+Completed 422 Unprocessable Entity in 18ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 4094)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:46:43 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"random@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "random@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2463)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:46:46 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"random@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "random@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 2462)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:00 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2462)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:04 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2462)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:47:20 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.1ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3854)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4200)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:21 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kiann99564@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiann99564@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2460)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:27 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kiann99564@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiann99564@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2460)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:28 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kiann99564@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiann99564@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 2462)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:28 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kiann99564@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiann99564@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 2460)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:47:37 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kiann99564@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiann99564@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1493)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1568)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 2460)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:48:05 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.2ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 636)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3859)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 4205)
+
+
+Started POST "/users" for ::1 at 2024-02-27 00:48:30 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"123", "email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["username", "123"], ["email", "123@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-02-26 21:48:30.576751"], ["updated_at", "2024-02-26 21:48:30.576751"]]
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 290ms (ActiveRecord: 5.5ms | Allocations: 2327)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:48:30 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1712)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 759)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 575)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4342)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.1ms | Allocations: 5279)
+
+
+Started GET "/signout" for ::1 at 2024-02-27 00:48:36 +0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 224)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:48:36 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:48:36 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 761)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 636)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3861)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4207)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:48:36 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:48:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:48:36 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:48:38 +0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 527)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.0ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3355)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3701)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:48:50 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "123@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 280ms (ActiveRecord: 0.1ms | Allocations: 797)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:48:50 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1333)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 575)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3910)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 4249)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:49:07 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2054)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 810)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 20505)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 1.4ms | Allocations: 22342)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 00:49:15 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:15 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:49:29 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2064)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 996)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 20743)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 1.5ms | Allocations: 22583)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:49:37 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:37 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:49:39 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2060)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.3ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 989)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 20667)
+Completed 200 OK in 35ms (Views: 28.9ms | ActiveRecord: 1.8ms | Allocations: 22503)
+
+
+Started DELETE "/signout" for ::1 at 2024-02-27 00:49:41 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/signout"):
+  
+Started GET "/" for ::1 at 2024-02-27 00:49:41 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1332)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 765)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 698)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4046)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 4381)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:49:41 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:41 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started DELETE "/signout" for ::1 at 2024-02-27 00:49:44 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/signout"):
+  
+Started GET "/" for ::1 at 2024-02-27 00:49:44 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1338)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.6ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 701)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 4054)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 4390)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:44 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:49:44 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:44 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started DELETE "/signout" for ::1 at 2024-02-27 00:49:44 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/signout"):
+  
+Started GET "/" for ::1 at 2024-02-27 00:49:44 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1338)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 701)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4054)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 4390)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:44 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:49:45 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:45 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started DELETE "/signout" for ::1 at 2024-02-27 00:49:45 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/signout"):
+  
+Started GET "/" for ::1 at 2024-02-27 00:49:45 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1338)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 701)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4054)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 4390)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:45 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:49:45 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:49:45 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/layouts/_navbar.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 00:50:20 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2064)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 892)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 20633)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 1.4ms | Allocations: 22473)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:50:28 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:50:28 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for ::1 at 2024-02-27 00:50:29 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1358)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3984)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 4320)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:50:29 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 00:50:29 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:50:29 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/signout" for ::1 at 2024-02-27 00:50:31 +0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:31 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:31 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1626)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1912)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 644)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4752)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.4ms | Allocations: 8812)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:33 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:33 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.4ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3858)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:34 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:34 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.4ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3858)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:35 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:35 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3858)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:37 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:37 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.5ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3858)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:40 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:40 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 640)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3877)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4223)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 00:50:40 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 00:50:40 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 00:50:40 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for ::1 at 2024-02-27 00:50:41 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:41 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.0ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3858)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:43 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 00:50:43 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.0ms | Allocations: 952)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1027)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3858)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4204)
+
+
+Started GET "/sessions/new" for ::1 at 2024-02-27 00:50:45 +0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 947)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3779)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4269)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 00:50:54 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "123@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 284ms (ActiveRecord: 0.1ms | Allocations: 1034)
+
+
+Started GET "/" for ::1 at 2024-02-27 00:50:54 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1337)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3994)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 4381)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 00:50:55 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 2.0ms | Allocations: 1003)
+  Rendered books/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1289)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4091)
+Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 0.8ms | Allocations: 7020)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 00:50:57 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.5ms | Allocations: 596)
+  Rendered books/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 671)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3473)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3811)
+
+
+Started GET "/books" for ::1 at 2024-02-27 00:51:00 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1334)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3950)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 4286)
+
+

@@ -1,6 +1,7 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green"><%= notice %> </p>
+<%= stylesheet_link_tag "book_page"%>
 
-<h1>Books</h1>
+<div class="bookContainer">
 
 <div id="books">
   <% @books.each do |book| %>
@@ -11,4 +12,10 @@
   <% end %>
 </div>
 
+  <div>
+    <%# Todo: Add topics section %>
+  </div>
+</div>
 <%= link_to "New book", new_book_path %>
+
+

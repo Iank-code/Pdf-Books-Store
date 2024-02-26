@@ -1,11 +1,15 @@
 <%= stylesheet_link_tag "navbar" %>
 <div class="container">
     <div class="child child-1">
-        <h1>PDF DOWLOAD</h1>
+        <h1> <%= link_to "PDF DOWLOAD", root_path %> </h1>
         <input type="search" class="input" placeholder="Search for books..."/>
     </div>
 
     <div class="child child-2">
+        <% if user_signed_in? %>
+            <%= link_to 'Register', new_user_path, class: 'sign_out', method: :delete %>
+        <% end %>
+        
         <button>Sign In</button>
     </div>
 </div>

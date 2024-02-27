@@ -5,9 +5,17 @@
 
 <div id="books">
   <% @books.each do |book| %>
-    <%= render book %>
+    <h1>
+    <%= link_to book.name, book %></h1>
+    <p><%= book.description %></p>
+    <div>
+    
+      <%= render book.file.blob, style: "width: 50%; height: auto;" %>
+    </div>
+
+
     <p>
-      <%= link_to "Show this book", book %>
+      
     </p>
   <% end %>
 </div>

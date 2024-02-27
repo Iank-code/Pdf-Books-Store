@@ -1,32 +1,36 @@
-<div class="text-center">
-  <h1>Sign In</h1>
+<%= stylesheet_link_tag "form" %>
 
-  <%= form_with(model: @user, url: sessions_path, local: true) do |f| %>
+<div class="container">
+  <div class="login-form">
+    <h1>Login</h1>
 
-    <!-- Display error message of form -->
-    <% if f.object.errors.full_messages.any? %>
-      <ul class='error'>
-        <% f.object.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+    <%= form_with(model: @user, url: sessions_path, local: true) do |f| %>
+
+      <% if f.object.errors.full_messages.any? %>
+        <ul class="error">
+          <% f.object.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.text_field :email, placeholder: 'Please enter email id', class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, placeholder: 'Please enter password', class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Sign In', class: "btn btn-primary" %>
+      </div>
     <% end %>
+  </div>
 
-    <!-- Field of sessoin form -->
-    <div class='row'>
-      <%= f.label :email %>
-      <%= f.text_field :email, placeholder: 'Please enter email id' %>
-    </div>
-
-    <div class='row'>
-      <%= f.label :password %>
-      <%= f.password_field :password, placeholder: 'Please enter password' %>
-    </div>
-
-    <div class='row'>
-      <%= f.submit 'Sign In' %>
-    </div>
-  <% end %>
+  <p class="register-link">
+    <%= link_to "Don't have an account? Register", new_user_path %>
+  </p>
 </div>
-
-<%= link_to "Don't have an account? Register", new_user_path %>

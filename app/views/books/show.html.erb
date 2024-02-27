@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @book %>
+<%= render @file %>
+<%= link_to "Download File", rails_blob_path(@file), class: "btn btn-primary" %>
+
 
 <div>
   <%= link_to "Edit this book", edit_book_path(@book) %> |

@@ -11,6 +11,7 @@
             <%= link_to 'Login', new_session_path, class: 'sign_out', method: :delete %>
         <% end %>
         <% if user_signed_in? %>
+            <%= link_to "New book", new_book_path %>
             <%= link_to 'Sign Out', signout_path, class: 'sign_out', method: :delete %>
         <% end %>
         

@@ -19936,3 +19936,10 @@ Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 13:44:25 +0300
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
 Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 14:11:07 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 15:12:44 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 15:12:44 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload

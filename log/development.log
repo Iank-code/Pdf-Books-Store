@@ -8698,3 +8698,1260 @@ FOREIGN KEY ("blob_id")
   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240227055148') RETURNING "version"[0m
   [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2024-02-27 08:52:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.8ms | Allocations: 2802)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3216)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.6ms | Allocations: 842)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 956)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 110.8ms | Allocations: 43393)
+Completed 200 OK in 246ms (Views: 121.6ms | ActiveRecord: 2.2ms | Allocations: 145129)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 08:52:53 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 08:52:54 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users" for ::1 at 2024-02-27 08:52:54 +0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 08:52:54 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1032)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3869)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 4226)
+
+
+Started GET "/" for ::1 at 2024-02-27 08:52:55 +0300
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/new" for ::1 at 2024-02-27 08:52:55 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 953)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1028)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3862)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 4216)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 08:52:55 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 08:52:55 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 08:52:55 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/sessions/new" for ::1 at 2024-02-27 08:52:58 +0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1085)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 637)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3925)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4517)
+
+
+Started POST "/sessions" for ::1 at 2024-02-27 08:53:13 +0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "123@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 291ms (ActiveRecord: 0.2ms | Allocations: 4464)
+
+
+Started GET "/" for ::1 at 2024-02-27 08:53:13 +0300
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1758)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.0ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4422)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 5327)
+
+
+Started GET "/" for ::1 at 2024-02-27 08:53:16 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1340)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 8.7ms | Allocations: 758)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 3950)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms | Allocations: 4286)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for ::1 at 2024-02-27 08:57:06 +0300
+Processing by BooksController#index as HTML
+Completed 422 Unprocessable Entity in 25ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5163)
+
+
+Started GET "/" for ::1 at 2024-02-27 08:57:06 +0300
+Processing by BooksController#index as HTML
+Completed 422 Unprocessable Entity in 31ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4643)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Started GET "/" for ::1 at 2024-02-27 08:59:53 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2057)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 892)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 20624)
+Completed 200 OK in 48ms (Views: 32.9ms | ActiveRecord: 1.7ms | Allocations: 25608)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 08:59:54 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 08:59:54 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/books/new" for ::1 at 2024-02-27 08:59:55 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 3.3ms | Allocations: 1442)
+  Rendered books/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1731)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4534)
+Completed 200 OK in 28ms (Views: 11.6ms | ActiveRecord: 0.7ms | Allocations: 32029)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/new" for ::1 at 2024-02-27 09:01:32 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 4.7ms | Allocations: 1841)
+  Rendered books/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2137)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 890)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 20828)
+Completed 200 OK in 46ms (Views: 29.2ms | ActiveRecord: 3.3ms | Allocations: 27922)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 09:01:39 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:01:39 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/new" for ::1 at 2024-02-27 09:01:50 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 6.4ms | Allocations: 1543)
+  Rendered books/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1839)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 835)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 894)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 20604)
+Completed 200 OK in 54ms (Views: 41.8ms | ActiveRecord: 4.0ms | Allocations: 27700)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 09:01:58 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:01:58 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/_form.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/new" for ::1 at 2024-02-27 09:02:07 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 2.2ms | Allocations: 1297)
+  Rendered books/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1593)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 891)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 20311)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 2.8ms | Allocations: 27424)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:02:15 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:02:16 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started POST "/books" for ::1 at 2024-02-27 09:02:26 +0300
+Processing by BooksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "book"=>{"name"=>" digital design digital design digital design principles & practices  digital design digital design digital design principles & practices", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007f41a4569658 @tempfile=#<Tempfile:/tmp/RackMultipart20240227-16792-kfygbc.pdf>, @content_type="application/pdf", @original_filename="100+Days+of+Python+Check+Off+Posters.pdf", @headers="Content-Disposition: form-data; name=\"book[file]\"; filename=\"100+Days+of+Python+Check+Off+Posters.pdf\"\r\nContent-Type: application/pdf\r\n">, "description"=>"some description"}, "commit"=>"Create Book"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Create (1.7ms)[0m  [1m[32mINSERT INTO "books" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", " digital design digital design digital design principles & practices  digital design digital design digital design principles & practices"], ["description", "some description"], ["created_at", "2024-02-27 06:02:26.618364"], ["updated_at", "2024-02-27 06:02:26.618364"]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "knkv3tvgdwoo8cqrryz7hkt8wax5"], ["filename", "100+Days+of+Python+Check+Off+Posters.pdf"], ["content_type", "application/pdf"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 179937], ["checksum", "y7kd2TobIcs+qh8kRTqEbQ=="], ["created_at", "2024-02-27 06:02:26.750289"]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "file"], ["record_type", "Book"], ["record_id", 2], ["blob_id", 1], ["created_at", "2024-02-27 06:02:26.755599"]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Update (0.2ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:02:26.758967"], ["id", 2]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+[36m  Disk Storage (1.6ms) [0m[32mUploaded file to key: knkv3tvgdwoo8cqrryz7hkt8wax5 (checksum: y7kd2TobIcs+qh8kRTqEbQ==)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Update (2.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Update (0.1ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:02:26.840471"], ["id", 2]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/books/2
+Completed 302 Found in 310ms (ActiveRecord: 16.2ms | Allocations: 179840)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:02:26 +0300
+Processing by BooksController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.9ms | Allocations: 205)
+  Rendered books/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1039)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.2ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3855)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 5448)
+
+
+Started GET "/books/2/edit" for ::1 at 2024-02-27 09:02:36 +0300
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 2.5ms | Allocations: 837)
+  Rendered books/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1108)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3906)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 4784)
+
+
+Started GET "/books" for ::1 at 2024-02-27 09:02:37 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1783)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4392)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 4810)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:02:38 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 299)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3097)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 3917)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 09:02:39 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 3.4ms | Allocations: 784)
+  Rendered books/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 859)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3661)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3999)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:02:39 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 299)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3097)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 3914)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:02:54 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 299)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.0ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3097)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 3914)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 09:02:54 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.3ms | Allocations: 784)
+  Rendered books/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 859)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3661)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3999)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:02:55 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 299)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3097)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 3916)
+
+
+Started GET "/books/2/edit" for ::1 at 2024-02-27 09:02:56 +0300
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.4ms | Allocations: 818)
+  Rendered books/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 920)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3718)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 4535)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:03:49 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:64:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.8ms | Allocations: 206)
+  Rendered books/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 856)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 828)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 890)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 19640)
+Completed 200 OK in 54ms (Views: 33.9ms | ActiveRecord: 2.7ms | Allocations: 28404)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:03:49 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:03:49 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/books/2" for ::1 at 2024-02-27 09:03:51 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:64:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 299)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3098)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 4350)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:03:51 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 09:03:51 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:03:51 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:17 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 205)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 862)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.5ms | Allocations: 832)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 893)
+  Rendered layouts/_footer.html.erb (Duration: 2.0ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 19654)
+Completed 200 OK in 122ms (Views: 34.5ms | ActiveRecord: 5.5ms | Allocations: 50830)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Started GET "/cable" for ::1 at 2024-02-27 09:06:27 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:06:27 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:28 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 2.0ms | Allocations: 205)
+  Rendered books/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5451)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5527)
+Completed 422 Unprocessable Entity in 101ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 36716)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:06:28 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:32 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 22ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 7157)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:33 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 21ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 7154)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:34 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 31ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 7153)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:34 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 19ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 7153)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:35 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 21ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 7152)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:35 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 18ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 7152)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:06:36 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4248)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4323)
+Completed 422 Unprocessable Entity in 19ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 7152)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Started GET "/books/2" for ::1 at 2024-02-27 09:08:12 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.5ms | Allocations: 205)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 30.5ms | Allocations: 4514)
+  Rendered books/show.html.erb within layouts/application (Duration: 35.0ms | Allocations: 5716)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.0ms | Allocations: 832)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 893)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 24514)
+Completed 200 OK in 128ms (Views: 63.3ms | ActiveRecord: 3.9ms | Allocations: 55835)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff/eyJfcmFpbHMiOnsiZGF0YSI6eyJyZXNpemVfdG9fbGltaXQiOlsxMDI0LDc2OF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--4b474f76870e2768d6747a5c9b10bd8d108aab52/100+Days+of+Python+Check+Off+Posters.pdf" for ::1 at 2024-02-27 09:08:12 +0300
+Processing by ActiveStorage::Representations::RedirectController#show as PDF
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff", "variation_key"=>"[FILTERED]", "filename"=>"100+Days+of+Python+Check+Off+Posters"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mDownloaded file from key: knkv3tvgdwoo8cqrryz7hkt8wax5[0m
+Started GET "/cable" for ::1 at 2024-02-27 09:08:12 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:08:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[36m  Disk Storage (340.3ms) [0m[34mPreviewed file from key: knkv3tvgdwoo8cqrryz7hkt8wax5[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "6exdvkdap1b656qsqyix0fxklb57"], ["filename", "100+Days+of+Python+Check+Off+Posters.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 80706], ["checksum", "NX3hyTb4HhUSDXdbCzJmJQ=="], ["created_at", "2024-02-27 06:08:12.748753"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "preview_image"], ["record_type", "ActiveStorage::Blob"], ["record_id", 1], ["blob_id", 2], ["created_at", "2024-02-27 06:08:12.754316"]]
+  [1m[36mBook Update (0.2ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:08:12.740136"], ["id", 2]]
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (1.0ms) [0m[32mUploaded file to key: 6exdvkdap1b656qsqyix0fxklb57 (checksum: NX3hyTb4HhUSDXdbCzJmJQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 447aae26-c426-4be7-94ca-2c3221e27fca) to Async(default) with arguments: #<GlobalID:0x00007f41b4248c20 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca] Performing ActiveStorage::AnalyzeJob (Job ID: 447aae26-c426-4be7-94ca-2c3221e27fca) from Async(default) enqueued at 2024-02-27T06:08:12.823489036Z with arguments: #<GlobalID:0x00007f41ac0c69b8 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/2>>
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 2], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+[36m  Disk Storage (2.7ms) [0m[34mDownloaded file from key: 6exdvkdap1b656qsqyix0fxklb57[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca] [36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: 6exdvkdap1b656qsqyix0fxklb57[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mActiveStorage::Blob Update (1.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"width\":1191,\"height\":1684,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [447aae26-c426-4be7-94ca-2c3221e27fca] Performed ActiveStorage::AnalyzeJob (Job ID: 447aae26-c426-4be7-94ca-2c3221e27fca) from Async(default) in 337.77ms
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::VariantRecord Create (1.9ms)[0m  [1m[32mINSERT INTO "active_storage_variant_records" ("blob_id", "variation_digest") VALUES (?, ?) RETURNING "id"[0m  [["blob_id", 2], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "m1svq3l1r5pfvtlu95synx2v80gl"], ["filename", "100+Days+of+Python+Check+Off+Posters.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 111427], ["checksum", "8iNlqxnZtk+zN1+onHlUYA=="], ["created_at", "2024-02-27 06:08:13.350253"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "image"], ["record_type", "ActiveStorage::VariantRecord"], ["record_id", 1], ["blob_id", 3], ["created_at", "2024-02-27 06:08:13.356018"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: m1svq3l1r5pfvtlu95synx2v80gl (checksum: 8iNlqxnZtk+zN1+onHlUYA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc) to Async(default) with arguments: #<GlobalID:0x00007f41b4268908 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/3>>
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 2], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: m1svq3l1r5pfvtlu95synx2v80gl (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJtMXN2cTNsMXI1cGZ2dGx1OTVzeW54MnY4MGdsIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjEzOjEzLjM3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0bb62ed1c58a1b3441a7bbcb4a289d060f1b68b/100+Days+of+Python+Check+Off+Posters.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJtMXN2cTNsMXI1cGZ2dGx1OTVzeW54MnY4MGdsIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjEzOjEzLjM3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0bb62ed1c58a1b3441a7bbcb4a289d060f1b68b/100+Days+of+Python+Check+Off+Posters.png
+Completed 302 Found in 1031ms (ActiveRecord: 15.7ms | Allocations: 120018)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJtMXN2cTNsMXI1cGZ2dGx1OTVzeW54MnY4MGdsIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjEzOjEzLjM3OFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0bb62ed1c58a1b3441a7bbcb4a289d060f1b68b/100+Days+of+Python+Check+Off+Posters.png" for ::1 at 2024-02-27 09:08:13 +0300
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc] Performing ActiveStorage::AnalyzeJob (Job ID: 3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc) from Async(default) enqueued at 2024-02-27T06:08:13.365011184Z with arguments: #<GlobalID:0x00007f41b4143a00 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: m1svq3l1r5pfvtlu95synx2v80gl[0m
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"100+Days+of+Python+Check+Off+Posters"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 256)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mActiveStorage::Blob Update (3.0ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"width\":543,\"height\":768,\"analyzed\":true}"], ["id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."id" = ?[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc] Performed ActiveStorage::AnalyzeJob (Job ID: 3cb7f33b-c2f8-42d4-b823-6f9ec9d8e5dc) from Async(default) in 80.3ms
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/2" for ::1 at 2024-02-27 09:10:29 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.8ms | Allocations: 205)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 11.8ms | Allocations: 1666)
+  Rendered books/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 3070)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 832)
+  Rendered layouts/_navbar.html.erb (Duration: 8.2ms | Allocations: 893)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 21870)
+Completed 200 OK in 181ms (Views: 75.2ms | ActiveRecord: 5.2ms | Allocations: 52988)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:10:38 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:10:38 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/mose/Videos/videos/Projects/Pdf-Books-Store/app/views/books/show.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/2" for ::1 at 2024-02-27 09:10:40 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.7ms | Allocations: 205)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 8.9ms | Allocations: 1667)
+  Rendered books/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3042)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 832)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 893)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 21842)
+Completed 200 OK in 243ms (Views: 60.4ms | ActiveRecord: 6.9ms | Allocations: 53020)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:10:47 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:10:47 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff/100+Days+of+Python+Check+Off+Posters.pdf" for ::1 at 2024-02-27 09:10:50 +0300
+Processing by ActiveStorage::Blobs::RedirectController#show as PDF
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff", "filename"=>"100+Days+of+Python+Check+Off+Posters"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: knkv3tvgdwoo8cqrryz7hkt8wax5 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrbmt2M3R2Z2R3b284Y3Fycnl6N2hrdDh3YXg1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE1OjUwLjc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ce24421d30851adac546af056ae088430be63def/100+Days+of+Python+Check+Off+Posters.pdf)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrbmt2M3R2Z2R3b284Y3Fycnl6N2hrdDh3YXg1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE1OjUwLjc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ce24421d30851adac546af056ae088430be63def/100+Days+of+Python+Check+Off+Posters.pdf
+Completed 302 Found in 10ms (ActiveRecord: 0.1ms | Allocations: 2062)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJrbmt2M3R2Z2R3b284Y3Fycnl6N2hrdDh3YXg1IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMTAwK0RheXMrb2YrUHl0aG9uK0NoZWNrK09mZitQb3N0ZXJzLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJzEwMCtEYXlzK29mK1B5dGhvbitDaGVjaytPZmYrUG9zdGVycy5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE1OjUwLjc0MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ce24421d30851adac546af056ae088430be63def/100+Days+of+Python+Check+Off+Posters.pdf" for ::1 at 2024-02-27 09:10:50 +0300
+Processing by ActiveStorage::DiskController#show as PDF
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"100+Days+of+Python+Check+Off+Posters"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 236)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:10:50 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/books/2" for ::1 at 2024-02-27 09:10:57 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.1ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 904)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3765)
+Completed 200 OK in 29ms (Views: 15.0ms | ActiveRecord: 0.5ms | Allocations: 6549)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:10:57 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:10:57 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/books" for ::1 at 2024-02-27 09:10:59 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1849)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.1ms | Allocations: 761)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 614)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4487)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 4905)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:11:00 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 2.5ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 904)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3765)
+Completed 200 OK in 20ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 6545)
+
+
+Started GET "/books/new" for ::1 at 2024-02-27 09:11:01 +0300
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 3.6ms | Allocations: 1254)
+  Rendered books/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1540)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4352)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 4755)
+
+
+Started GET "/" for ::1 at 2024-02-27 09:11:08 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered books/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1464)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4073)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.1ms | Allocations: 4410)
+
+
+Started POST "/books" for ::1 at 2024-02-27 09:11:36 +0300
+Processing by BooksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "book"=>{"name"=>"psd", "file"=>#<ActionDispatch::Http::UploadedFile:0x00007f41ac0bedf8 @tempfile=#<Tempfile:/tmp/RackMultipart20240227-16792-gxqrqa.pdf>, @content_type="application/pdf", @original_filename="psd.pdf", @headers="Content-Disposition: form-data; name=\"book[file]\"; filename=\"psd.pdf\"\r\nContent-Type: application/pdf\r\n">, "description"=>"Programming book"}, "commit"=>"Create Book"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mBook Create (2.9ms)[0m  [1m[32mINSERT INTO "books" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "psd"], ["description", "Programming book"], ["created_at", "2024-02-27 06:11:36.395919"], ["updated_at", "2024-02-27 06:11:36.395919"]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "jhmq7xhhnfpd1ttw4mnebbp9upl0"], ["filename", "psd.pdf"], ["content_type", "application/pdf"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 1659085], ["checksum", "eJCgu7DSngE9Nx6qGkqqpw=="], ["created_at", "2024-02-27 06:11:36.408342"]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "file"], ["record_type", "Book"], ["record_id", 3], ["blob_id", 4], ["created_at", "2024-02-27 06:11:36.412462"]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mBook Update (0.1ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:11:36.417511"], ["id", 3]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+[36m  Disk Storage (7.3ms) [0m[32mUploaded file to key: jhmq7xhhnfpd1ttw4mnebbp9upl0 (checksum: eJCgu7DSngE9Nx6qGkqqpw==)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Blob Update (1.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 4]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mBook Update (0.1ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:11:36.447229"], ["id", 3]]
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:29:in `block in create'
+Redirected to http://localhost:3000/books/3
+Completed 302 Found in 64ms (ActiveRecord: 10.4ms | Allocations: 16090)
+
+
+Started GET "/books/3" for ::1 at 2024-02-27 09:11:36 +0300
+Processing by BooksController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.0ms | Allocations: 406)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 958)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.4ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3819)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 6649)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c/eyJfcmFpbHMiOnsiZGF0YSI6eyJyZXNpemVfdG9fbGltaXQiOlsxMDI0LDc2OF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--4b474f76870e2768d6747a5c9b10bd8d108aab52/psd.pdf" for ::1 at 2024-02-27 09:11:36 +0300
+Processing by ActiveStorage::Representations::RedirectController#show as PDF
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c", "variation_key"=>"[FILTERED]", "filename"=>"psd"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[36m  Disk Storage (2.6ms) [0m[34mDownloaded file from key: jhmq7xhhnfpd1ttw4mnebbp9upl0[0m
+[36m  Disk Storage (300.3ms) [0m[34mPreviewed file from key: jhmq7xhhnfpd1ttw4mnebbp9upl0[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 4]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "md3xh60ewhgqb8icdsgz8lr8hpc5"], ["filename", "psd.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 611334], ["checksum", "tAsMyN+qrF+mehuWsQ37EQ=="], ["created_at", "2024-02-27 06:11:36.891018"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "preview_image"], ["record_type", "ActiveStorage::Blob"], ["record_id", 4], ["blob_id", 5], ["created_at", "2024-02-27 06:11:36.894871"]]
+  [1m[36mBook Update (0.3ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = ? WHERE "books"."id" = ?[0m  [["updated_at", "2024-02-27 06:11:36.884734"], ["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (3.3ms) [0m[32mUploaded file to key: md3xh60ewhgqb8icdsgz8lr8hpc5 (checksum: tAsMyN+qrF+mehuWsQ37EQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 14e30cb9-e2fe-4c04-9d90-d8aab6154e85) to Async(default) with arguments: #<GlobalID:0x00007f41a8d2de08 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85] Performing ActiveStorage::AnalyzeJob (Job ID: 14e30cb9-e2fe-4c04-9d90-d8aab6154e85) from Async(default) enqueued at 2024-02-27T06:11:36.910655693Z with arguments: #<GlobalID:0x00007f41c0a3aa58 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85] [36m  Disk Storage (1.4ms) [0m[34mDownloaded file from key: md3xh60ewhgqb8icdsgz8lr8hpc5[0m
+  [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 5], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+[36m  Disk Storage (1.3ms) [0m[34mDownloaded file from key: md3xh60ewhgqb8icdsgz8lr8hpc5[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mActiveStorage::Blob Update (1.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"width\":612,\"height\":792,\"analyzed\":true}"], ["id", 5]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 5]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [14e30cb9-e2fe-4c04-9d90-d8aab6154e85] Performed ActiveStorage::AnalyzeJob (Job ID: 14e30cb9-e2fe-4c04-9d90-d8aab6154e85) from Async(default) in 68.92ms
+Started GET "/books" for ::1 at 2024-02-27 09:11:37 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered books/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1614)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.4ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 614)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 4242)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms | Allocations: 4581)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::VariantRecord Create (2.2ms)[0m  [1m[32mINSERT INTO "active_storage_variant_records" ("blob_id", "variation_digest") VALUES (?, ?) RETURNING "id"[0m  [["blob_id", 5], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "5efz7trrhuc0wotr5ix5vzwu9de1"], ["filename", "psd.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 621289], ["checksum", "I5opKptYPqyLcWzNcuuQ+w=="], ["created_at", "2024-02-27 06:11:37.274820"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "image"], ["record_type", "ActiveStorage::VariantRecord"], ["record_id", 2], ["blob_id", 6], ["created_at", "2024-02-27 06:11:37.278202"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+[36m  Disk Storage (2.6ms) [0m[32mUploaded file to key: 5efz7trrhuc0wotr5ix5vzwu9de1 (checksum: I5opKptYPqyLcWzNcuuQ+w==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 38a3cf5d-c0a8-49a8-a084-292ec29020fb) to Async(default) with arguments: #<GlobalID:0x00007f41a80739d8 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/6>>
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 5], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 5efz7trrhuc0wotr5ix5vzwu9de1 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1ZWZ6N3Rycmh1YzB3b3RyNWl4NXZ6d3U5ZGUxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjM3LjMwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--406d0ff551adb6990fa1a22fd471ef87729f18ea/psd.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1ZWZ6N3Rycmh1YzB3b3RyNWl4NXZ6d3U5ZGUxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjM3LjMwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--406d0ff551adb6990fa1a22fd471ef87729f18ea/psd.png
+Completed 302 Found in 766ms (ActiveRecord: 8.0ms | Allocations: 62492)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb] Performing ActiveStorage::AnalyzeJob (Job ID: 38a3cf5d-c0a8-49a8-a084-292ec29020fb) from Async(default) enqueued at 2024-02-27T06:11:37.289891926Z with arguments: #<GlobalID:0x00007f41c12a3690 @uri=#<URI::GID gid://pdf-drive/ActiveStorage::Blob/6>>
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI1ZWZ6N3Rycmh1YzB3b3RyNWl4NXZ6d3U5ZGUxIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjM3LjMwNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--406d0ff551adb6990fa1a22fd471ef87729f18ea/psd.png" for ::1 at 2024-02-27 09:11:37 +0300
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb] [36m  Disk Storage (1.2ms) [0m[34mDownloaded file from key: 5efz7trrhuc0wotr5ix5vzwu9de1[0m
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 186)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mActiveStorage::Blob Update (1.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"width\":593,\"height\":768,\"analyzed\":true}"], ["id", 6]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 6]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mActiveStorage::VariantRecord Load (0.2ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."id" = ?[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [38a3cf5d-c0a8-49a8-a084-292ec29020fb] Performed ActiveStorage::AnalyzeJob (Job ID: 38a3cf5d-c0a8-49a8-a084-292ec29020fb) from Async(default) in 61.07ms
+Started GET "/books" for ::1 at 2024-02-27 09:11:40 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered books/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1588)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.2ms | Allocations: 762)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4213)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.7ms | Allocations: 4550)
+
+
+Started GET "/books" for ::1 at 2024-02-27 09:11:41 +0300
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:7
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered books/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1583)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4192)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 4528)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:11:42 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.0ms | Allocations: 402)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 907)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3769)
+Completed 200 OK in 17ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 6550)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:11:43 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.0ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 904)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3765)
+Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 6546)
+
+
+Started GET "/books/2" for ::1 at 2024-02-27 09:11:44 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.8ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 904)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.7ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3765)
+Completed 200 OK in 27ms (Views: 13.9ms | ActiveRecord: 0.5ms | Allocations: 6545)
+
+
+Started GET "/books/3" for ::1 at 2024-02-27 09:11:46 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 1.0ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 902)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.0ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3763)
+Completed 200 OK in 20ms (Views: 8.0ms | ActiveRecord: 0.5ms | Allocations: 6543)
+
+
+Started GET "/books/3/edit" for ::1 at 2024-02-27 09:11:52 +0300
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 2.7ms | Allocations: 820)
+  Rendered books/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1094)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 757)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3892)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4766)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c/psd.pdf" for ::1 at 2024-02-27 09:11:53 +0300
+Processing by ActiveStorage::Blobs::RedirectController#show as PDF
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c", "filename"=>"psd"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: jhmq7xhhnfpd1ttw4mnebbp9upl0 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqaG1xN3hoaG5mcGQxdHR3NG1uZWJicDl1cGwwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjUzLjAxMloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ebfa2bd727ed1b9465aca757bc78bca1eac6ec6d/psd.pdf)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqaG1xN3hoaG5mcGQxdHR3NG1uZWJicDl1cGwwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjUzLjAxMloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ebfa2bd727ed1b9465aca757bc78bca1eac6ec6d/psd.pdf
+Completed 302 Found in 8ms (ActiveRecord: 0.1ms | Allocations: 1263)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqaG1xN3hoaG5mcGQxdHR3NG1uZWJicDl1cGwwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjUzLjAxMloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ebfa2bd727ed1b9465aca757bc78bca1eac6ec6d/psd.pdf" for ::1 at 2024-02-27 09:11:53 +0300
+Processing by ActiveStorage::DiskController#show as PDF
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 186)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:11:53 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/books/3" for ::1 at 2024-02-27 09:11:59 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 2.2ms | Allocations: 399)
+  Rendered books/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 902)
+  Rendered /usr/local/rvm/gems/ruby-3.0.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.3ms | Allocations: 760)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 615)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 3763)
+Completed 200 OK in 31ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 6541)
+
+
+Started GET "/cable" for ::1 at 2024-02-27 09:11:59 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:11:59 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqaG1xN3hoaG5mcGQxdHR3NG1uZWJicDl1cGwwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjUzLjAxMloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ebfa2bd727ed1b9465aca757bc78bca1eac6ec6d/psd.pdf" for ::1 at 2024-02-27 09:12:32 +0300
+Processing by ActiveStorage::DiskController#show as PDF
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 178)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:12:32 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 09:12:36 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:12:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJqaG1xN3hoaG5mcGQxdHR3NG1uZWJicDl1cGwwIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTAyLTI3VDA2OjE2OjUzLjAxMloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--ebfa2bd727ed1b9465aca757bc78bca1eac6ec6d/psd.pdf" for ::1 at 2024-02-27 09:13:47 +0300
+Processing by ActiveStorage::DiskController#show as PDF
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 178)
+
+
+Finished "/cable" [WebSocket] for ::1 at 2024-02-27 09:13:47 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for ::1 at 2024-02-27 09:14:05 +0300
+Started GET "/cable" [WebSocket] for ::1 at 2024-02-27 09:14:05 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload

@@ -8,6 +8,8 @@ class BooksController < ApplicationController
 
   # GET /books/1 or /books/1.json
   def show
+    @books = Book.find(params[:id])
+    @file = @book.file.blob
   end
 
   # GET /books/new
@@ -65,6 +67,6 @@ class BooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def book_params
-      params.require(:book).permit(:name, :description)
+      params.require(:book).permit(:name, :description, :file)
     end
 end

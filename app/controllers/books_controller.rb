@@ -10,7 +10,7 @@ class BooksController < ApplicationController
   def show
     @books = Book.find(params[:id])
 
-    @file = @book.file.blob
+    @file = @book.file.blob 
   end
 
   # GET /books/new

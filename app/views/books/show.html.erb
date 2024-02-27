@@ -1,13 +1,16 @@
+<%= stylesheet_link_tag "books/show" %>
+    <%= link_to "Edit", edit_book_path(@book) %>
+
 <p style="color: green"><%= notice %></p>
 
-<%= render @book %>
-<%= render @file %>
-<%= link_to "Download File", rails_blob_path(@file), class: "btn btn-primary" %>
+<div class="bookContainer">
+  <div class="bookFile">
+    <%= render @file %>
+    <%= render @book %>
+  </div>
 
-
-<div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
-
-  <%= button_to "Destroy this book", @book, method: :delete %>
+  <div class="bookLinks">
+    <%= link_to "Download File", rails_blob_path(@file), class: "btn btn-primary" %>
+  </div>
 </div>
+

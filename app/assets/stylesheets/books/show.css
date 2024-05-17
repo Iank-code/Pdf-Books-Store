@@ -17,6 +17,22 @@ a:hover {
   display: flex;
 }
 
+.book_info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 3em;
+}
+
+.book_file > * {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  object-fit: cover;
+  height: 500px;
+  overflow: hidden !important;
+}
+
 .bookLinks {
   display: flex;
 }

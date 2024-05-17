@@ -1,12 +1,30 @@
 .bookContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 1em;
 }
 
-.book-image {
-  /* Add your desired styles here */
-  width: 200px;
-  height: 200px;
-  object-fit: cover; /* Optional: Adjust image resizing */
-  border-radius: 5px; /* Optional: Add rounded corners */
+#books {
+  display: flex !important;
+  flex-direction: row !important;
+  padding: 4em;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5em;
+}
+
+.book_file_pdf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.book_file > * {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  object-fit: cover;
+  height: 250px;
+  overflow: hidden !important;
 }

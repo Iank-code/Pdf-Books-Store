@@ -14,6 +14,9 @@
     <% if user_signed_in? %>
       <%= link_to "New book", new_book_path %>
       <%= link_to 'Sign Out', signout_path, class: 'sign_out', method: :delete %>
+      <p>
+        <%= @current_user.username%>
+      </p>
     <% end %>
   </div>
 </div>

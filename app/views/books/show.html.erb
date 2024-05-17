@@ -1,21 +1,24 @@
 <%= stylesheet_link_tag "books/show" %>
-    <%= link_to "Edit", edit_book_path(@book) %>
+    <%# <%= link_to "Edit", edit_book_path(@book) %> %>
+    <%= link_to "Back", root_path %>
 
 <p style="color: green"><%= notice %></p>
 
 <div class="bookContainer">
   <div class="bookFile">
-    <%= render @file %>
+    <div  class="book_file">
+      <%= render @file %>
+    </div>
 
-    <div>
+    <div class="book_info">
       <h1><%= @book.name %></h1>
       <p><%= @book.description %></p>
+      <div class="bookLinks">
+        <%= link_to "Download File", rails_blob_path(@file), class: "btn btn-primary" %>
+      </div>
     </div>
 
   </div>
 
-  <div class="bookLinks">
-    <%= link_to "Download File", rails_blob_path(@file), class: "btn btn-primary" %>
-  </div>
 </div>
 

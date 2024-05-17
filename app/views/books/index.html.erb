@@ -3,25 +3,22 @@
 
 <div class="bookContainer">
 
-<div id="books">
-  <% @books.each do |book| %>
-    <h1>
-    <%= link_to book.name, book %></h1>
-    <p><%= book.description %></p>
-    <div>
-    
-      <%= render book.file.blob, style: "width: 50%; height: auto;" %>
-    </div>
-
-
-    <p>
-      
-    </p>
-  <% end %>
-</div>
-
   <div>
     <%# Todo: Add topics section %>
+  </div>
+
+  <div id="books">
+    <% @books.each do |book| %>
+      <div class="book_file_pdf">
+        <h1><%= link_to book.name, book %></h1>
+        <p><%= book.description %></p>
+
+        <div  class="book_file">
+          <%= render book.file.blob %>
+        </div>
+
+      </div>
+    <% end %>
   </div>
 </div>
 

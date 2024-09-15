@@ -37420,3 +37420,396 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 20ms (Views: 9.2ms | ActiveRecord: 1.0ms | Allocations: 7503)
 
 
+Started GET "/" for 127.0.0.1 at 2024-09-16 00:32:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+Redirected to http://localhost:3000/users/new
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms | Allocations: 1881)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-09-16 00:32:26 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1580.2ms | Allocations: 117717)
+  Rendered users/new.html.erb within layouts/application (Duration: 1584.6ms | Allocations: 118151)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.8ms | Allocations: 869)
+  Rendered layouts/_navbar.html.erb (Duration: 7.9ms | Allocations: 989)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 1843.4ms | Allocations: 137491)
+Completed 200 OK in 2062ms (Views: 1868.9ms | ActiveRecord: 7.1ms | Allocations: 161150)
+
+
+Started GET "/cable" for 127.0.0.1 at 2024-09-16 00:32:29 +0300
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2024-09-16 00:32:29 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/users/new" for 127.0.0.1 at 2024-09-16 00:32:33 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.7ms | Allocations: 1645)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1724)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.7ms | Allocations: 782)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 675)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 4663)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 4952)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-09-16 00:32:59 +0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"ianKcode", "email"=>"kian99564@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mUser Create (6.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["username", "ianKcode"], ["email", "kian99564@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-09-15 21:33:00.142660"], ["updated_at", "2024-09-15 21:33:00.142660"]]
+  ↳ app/controllers/users_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 1029ms (ActiveRecord: 10.7ms | Allocations: 3345)
+
+
+Started GET "/" for 127.0.0.1 at 2024-09-16 00:33:00 +0300
+Processing by BooksController#index as TURBO_STREAM
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 58.0ms | Allocations: 4022)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 2.8ms | Allocations: 341)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.7ms | Allocations: 348)
+  Rendered books/index.html.erb within layouts/application (Duration: 415.7ms | Allocations: 39767)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.0ms | Allocations: 786)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 674)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 436.7ms | Allocations: 42725)
+Completed 200 OK in 640ms (Views: 431.0ms | ActiveRecord: 8.3ms | Allocations: 58250)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff/eyJfcmFpbHMiOnsiZGF0YSI6eyJyZXNpemVfdG9fbGltaXQiOlsxMDI0LDc2OF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--4b474f76870e2768d6747a5c9b10bd8d108aab52/Advanced%20API%20Security_%20Securing%20APIs%20with%20OAuth%202.0,%20OpenID%20Connect,%20JWS,%20and%20JWE%20(%20PDFDrive%20).pdf" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c/eyJfcmFpbHMiOnsiZGF0YSI6eyJyZXNpemVfdG9fbGltaXQiOlsxMDI0LDc2OF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--4b474f76870e2768d6747a5c9b10bd8d108aab52/psd.pdf" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NywicHVyIjoiYmxvYl9pZCJ9fQ==--8d0c684deed316a18b8131f881c649599aa55b71/eyJfcmFpbHMiOnsiZGF0YSI6eyJyZXNpemVfdG9fbGltaXQiOlsxMDI0LDc2OF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--4b474f76870e2768d6747a5c9b10bd8d108aab52/2010%20SW_Engineering_and_Testing_An_Introduction_CS_Agarwal.pdf" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Processing by ActiveStorage::Representations::RedirectController#show as PDF
+Processing by ActiveStorage::Representations::RedirectController#show as PDF
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c", "variation_key"=>"[FILTERED]", "filename"=>"psd"}
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--3a04fe5ac7c05e1d34e67d5d96414388dd4fc4ff", "variation_key"=>"[FILTERED]", "filename"=>"Advanced API Security_ Securing APIs with OAuth 2.0, OpenID Connect, JWS, and JWE ( PDFDrive )"}
+Processing by ActiveStorage::Representations::RedirectController#show as PDF
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NywicHVyIjoiYmxvYl9pZCJ9fQ==--8d0c684deed316a18b8131f881c649599aa55b71", "variation_key"=>"[FILTERED]", "filename"=>"2010 SW_Engineering_and_Testing_An_Introduction_CS_Agarwal"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (4.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 2], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.3ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 8], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 5], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 2], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 8], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 5], ["variation_digest", "wjqVtOuFppDd1oEBBMUc2TyD8vk="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+[36m  Disk Storage (2.6ms) [0m[34mGenerated URL for file at key: azya1ndxd13jddf984p5w0qr9r5r (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhenlhMW5keGQxM2pkZGY5ODRwNXcwcXI5cjVyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQWR2YW5jZWQgQVBJIFNlY3VyaXR5XyBTZWN1cmluZyBBUElzIHdpdGggT0F1dGggMi4wJTJDIE9wZW5JRCBDb25uZWN0JTJDIEpXUyUyQyBhbmQgSldFICUyOCBQREZEcml2ZSAlMjkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnQWR2YW5jZWQlMjBBUEklMjBTZWN1cml0eV8lMjBTZWN1cmluZyUyMEFQSXMlMjB3aXRoJTIwT0F1dGglMjAyLjAlMkMlMjBPcGVuSUQlMjBDb25uZWN0JTJDJTIwSldTJTJDJTIwYW5kJTIwSldFJTIwJTI4JTIwUERGRHJpdmUlMjAlMjkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41NzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c398a1cbdd96e7cd3b45839f7f1c3be81691136/Advanced%20API%20Security_%20Securing%20APIs%20with%20OAuth%202.0,%20OpenID%20Connect,%20JWS,%20and%20JWE%20(%20PDFDrive%20).png)[0m
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: thap1kwr4ckursehvv3khshgphtt (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ0aGFwMWt3cjRja3Vyc2VodnYza2hzaGdwaHR0IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjAxLjU5MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--18cd0e58402a0106c81e0a02e790068f18d28fce/psd.png)[0m
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: 6lr8gnnhhhncxuevrq50fgp727q6 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2bHI4Z25uaGhobmN4dWV2cnE1MGZncDcyN3E2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMjAxMCBTV19FbmdpbmVlcmluZ19hbmRfVGVzdGluZ19Bbl9JbnRyb2R1Y3Rpb25fQ1NfQWdhcndhbC5wbmdcIjsgZmlsZW5hbWUqPVVURi04JycyMDEwJTIwU1dfRW5naW5lZXJpbmdfYW5kX1Rlc3RpbmdfQW5fSW50cm9kdWN0aW9uX0NTX0FnYXJ3YWwucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41ODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--090defd2cffc0c00fb8da11fa56ff9d619351f80/2010%20SW_Engineering_and_Testing_An_Introduction_CS_Agarwal.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2bHI4Z25uaGhobmN4dWV2cnE1MGZncDcyN3E2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMjAxMCBTV19FbmdpbmVlcmluZ19hbmRfVGVzdGluZ19Bbl9JbnRyb2R1Y3Rpb25fQ1NfQWdhcndhbC5wbmdcIjsgZmlsZW5hbWUqPVVURi04JycyMDEwJTIwU1dfRW5naW5lZXJpbmdfYW5kX1Rlc3RpbmdfQW5fSW50cm9kdWN0aW9uX0NTX0FnYXJ3YWwucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41ODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--090defd2cffc0c00fb8da11fa56ff9d619351f80/2010%20SW_Engineering_and_Testing_An_Introduction_CS_Agarwal.png
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhenlhMW5keGQxM2pkZGY5ODRwNXcwcXI5cjVyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQWR2YW5jZWQgQVBJIFNlY3VyaXR5XyBTZWN1cmluZyBBUElzIHdpdGggT0F1dGggMi4wJTJDIE9wZW5JRCBDb25uZWN0JTJDIEpXUyUyQyBhbmQgSldFICUyOCBQREZEcml2ZSAlMjkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnQWR2YW5jZWQlMjBBUEklMjBTZWN1cml0eV8lMjBTZWN1cmluZyUyMEFQSXMlMjB3aXRoJTIwT0F1dGglMjAyLjAlMkMlMjBPcGVuSUQlMjBDb25uZWN0JTJDJTIwSldTJTJDJTIwYW5kJTIwSldFJTIwJTI4JTIwUERGRHJpdmUlMjAlMjkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41NzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c398a1cbdd96e7cd3b45839f7f1c3be81691136/Advanced%20API%20Security_%20Securing%20APIs%20with%20OAuth%202.0,%20OpenID%20Connect,%20JWS,%20and%20JWE%20(%20PDFDrive%20).png
+Completed 302 Found in 391ms (ActiveRecord: 9.4ms | Allocations: 39894)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ0aGFwMWt3cjRja3Vyc2VodnYza2hzaGdwaHR0IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjAxLjU5MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--18cd0e58402a0106c81e0a02e790068f18d28fce/psd.png
+Completed 302 Found in 411ms (ActiveRecord: 3.0ms | Allocations: 41171)
+
+
+Completed 302 Found in 421ms (ActiveRecord: 7.3ms | Allocations: 41896)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI2bHI4Z25uaGhobmN4dWV2cnE1MGZncDcyN3E2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMjAxMCBTV19FbmdpbmVlcmluZ19hbmRfVGVzdGluZ19Bbl9JbnRyb2R1Y3Rpb25fQ1NfQWdhcndhbC5wbmdcIjsgZmlsZW5hbWUqPVVURi04JycyMDEwJTIwU1dfRW5naW5lZXJpbmdfYW5kX1Rlc3RpbmdfQW5fSW50cm9kdWN0aW9uX0NTX0FnYXJ3YWwucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41ODFaIiwicHVyIjoiYmxvYl9rZXkifX0=--090defd2cffc0c00fb8da11fa56ff9d619351f80/2010%20SW_Engineering_and_Testing_An_Introduction_CS_Agarwal.png" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ0aGFwMWt3cjRja3Vyc2VodnYza2hzaGdwaHR0IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjAxLjU5MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--18cd0e58402a0106c81e0a02e790068f18d28fce/psd.png" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJhenlhMW5keGQxM2pkZGY5ODRwNXcwcXI5cjVyIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiQWR2YW5jZWQgQVBJIFNlY3VyaXR5XyBTZWN1cmluZyBBUElzIHdpdGggT0F1dGggMi4wJTJDIE9wZW5JRCBDb25uZWN0JTJDIEpXUyUyQyBhbmQgSldFICUyOCBQREZEcml2ZSAlMjkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcnQWR2YW5jZWQlMjBBUEklMjBTZWN1cml0eV8lMjBTZWN1cmluZyUyMEFQSXMlMjB3aXRoJTIwT0F1dGglMjAyLjAlMkMlMjBPcGVuSUQlMjBDb25uZWN0JTJDJTIwSldTJTJDJTIwYW5kJTIwSldFJTIwJTI4JTIwUERGRHJpdmUlMjAlMjkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0wOS0xNVQyMTozODowMS41NzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--0c398a1cbdd96e7cd3b45839f7f1c3be81691136/Advanced%20API%20Security_%20Securing%20APIs%20with%20OAuth%202.0,%20OpenID%20Connect,%20JWS,%20and%20JWE%20(%20PDFDrive%20).png" for 127.0.0.1 at 2024-09-16 00:33:01 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"Advanced API Security_ Securing APIs with OAuth 2.0, OpenID Connect, JWS, and JWE ( PDFDrive )"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"2010 SW_Engineering_and_Testing_An_Introduction_CS_Agarwal"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms | Allocations: 965)
+
+
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:33:03 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.4ms | Allocations: 345)
+  Rendered books/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1656)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.6ms | Allocations: 786)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 668)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 4625)
+Completed 200 OK in 61ms (Views: 35.0ms | ActiveRecord: 1.3ms | Allocations: 7869)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:33:11 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.6ms | Allocations: 343)
+  Rendered books/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1362)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.1ms | Allocations: 783)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 665)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 4427)
+Completed 200 OK in 59ms (Views: 36.9ms | ActiveRecord: 0.9ms | Allocations: 6918)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:33:27 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.0ms | Allocations: 342)
+  Rendered books/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1361)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.0ms | Allocations: 782)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 665)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 4320)
+Completed 200 OK in 50ms (Views: 31.4ms | ActiveRecord: 0.8ms | Allocations: 6809)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2024-09-16 00:33:30 +0300
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c/psd.pdf" for 127.0.0.1 at 2024-09-16 00:33:30 +0300
+Processing by ActiveStorage::Blobs::RedirectController#show as PDF
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4abcdd37ea6f899e7260fb4627c1b813bd75415c", "filename"=>"psd"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (1.5ms) [0m[34mGenerated URL for file at key: ux55vfn5ukm4c6gsg1qgrj7rotx6 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1eDU1dmZuNXVrbTRjNmdzZzFxZ3JqN3JvdHg2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjMwLjIxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4dbdfb842bb17a7aeac538d951056413e2825446/psd.pdf)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1eDU1dmZuNXVrbTRjNmdzZzFxZ3JqN3JvdHg2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjMwLjIxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4dbdfb842bb17a7aeac538d951056413e2825446/psd.pdf
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms | Allocations: 1898)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ1eDU1dmZuNXVrbTRjNmdzZzFxZ3JqN3JvdHg2IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBkZlwiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjMwLjIxN1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4dbdfb842bb17a7aeac538d951056413e2825446/psd.pdf" for 127.0.0.1 at 2024-09-16 00:33:30 +0300
+Processing by ActiveStorage::DiskController#show as PDF
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 158)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:36:08 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 5.9ms | Allocations: 344)
+  Rendered books/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1374)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.0ms | Allocations: 786)
+  Rendered layouts/_navbar.html.erb (Duration: 6.8ms | Allocations: 668)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 4343)
+Completed 200 OK in 72ms (Views: 40.9ms | ActiveRecord: 1.3ms | Allocations: 6832)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ0aGFwMWt3cjRja3Vyc2VodnYza2hzaGdwaHR0IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjAxLjU5MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--18cd0e58402a0106c81e0a02e790068f18d28fce/psd.png" for 127.0.0.1 at 2024-09-16 00:36:08 +0300
+Started GET "/cable" for 127.0.0.1 at 2024-09-16 00:36:08 +0300
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2024-09-16 00:36:08 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for 127.0.0.1 at 2024-09-16 00:36:13 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.2ms | Allocations: 405)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.1ms | Allocations: 341)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.1ms | Allocations: 348)
+  Rendered books/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 6364)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.7ms | Allocations: 782)
+  Rendered layouts/_navbar.html.erb (Duration: 4.8ms | Allocations: 665)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 9294)
+Completed 200 OK in 84ms (Views: 76.9ms | ActiveRecord: 2.4ms | Allocations: 9918)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/giga/Desktop/Open Source/Pdf-Books-Store/app/views/books/show.html.erb"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/giga/Desktop/Open Source/Pdf-Books-Store/app/views/books/show.html.erb"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:36:34 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 9.6ms | Allocations: 1162)
+  Rendered books/show.html.erb within layouts/application (Duration: 18.5ms | Allocations: 2832)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 5.1ms | Allocations: 854)
+  Rendered layouts/_navbar.html.erb (Duration: 5.0ms | Allocations: 959)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 90.2ms | Allocations: 21974)
+Completed 200 OK in 246ms (Views: 94.8ms | ActiveRecord: 11.0ms | Allocations: 47277)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2024-09-16 00:36:39 +0300
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `set_book'
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `show'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.8ms | Allocations: 343)
+  Rendered books/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1372)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.4ms | Allocations: 782)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 665)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 4331)
+Completed 200 OK in 50ms (Views: 29.4ms | ActiveRecord: 0.9ms | Allocations: 6824)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ0aGFwMWt3cjRja3Vyc2VodnYza2hzaGdwaHR0IiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicHNkLnBuZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ3BzZC5wbmciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9wbmciLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI0LTA5LTE1VDIxOjM4OjAxLjU5MFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--18cd0e58402a0106c81e0a02e790068f18d28fce/psd.png" for 127.0.0.1 at 2024-09-16 00:36:39 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"psd"}
+Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/cable" for 127.0.0.1 at 2024-09-16 00:36:39 +0300
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2024-09-16 00:36:39 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+Started GET "/" for 127.0.0.1 at 2024-09-16 00:36:41 +0300
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 4.2ms | Allocations: 404)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 2.9ms | Allocations: 341)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Book"], ["name", "file"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:17
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/actiontext-7.1.3.2/app/views/active_storage/blobs/_blob.html.erb (Duration: 3.0ms | Allocations: 348)
+  Rendered books/index.html.erb within layouts/application (Duration: 56.3ms | Allocations: 6791)
+  Rendered /home/giga/.rvm/gems/ruby-3.2.0/gems/hotwire-livereload-1.3.1/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 3.7ms | Allocations: 782)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 665)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 9721)
+Completed 200 OK in 78ms (Views: 71.4ms | ActiveRecord: 1.9ms | Allocations: 10432)
+
+

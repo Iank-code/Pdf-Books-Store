@@ -13,6 +13,8 @@
         <div class="flex flex-col items-start">
           <h1 class="font-semibold"><%= link_to book.name, book %></h1>
           <p><%= book.description %></p>
+          <% size_in_bytes = book.file.blob.byte_size %>
+          <p>File Size: <%= human_readable_file_size(size_in_bytes) %></p>
         </div>
       </div>
     <% end %>

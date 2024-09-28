@@ -1,0 +1,84 @@
+/* Baseline styles */
+.container {
+  display: flex;
+  flex-direction: row !important;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 2em;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  margin-bottom: 2em;
+  gap: 2em;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.child-1 h1 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0062cc;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Switch to vertical layout for smaller screens */
+  .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center; /* Center elements vertically */
+  }
+
+  .child {
+    width: 100%; /* Make children full width on smaller screens */
+    flex-direction: column; /* Stack elements vertically within child */
+  }
+
+  .child-1 h1 a,
+  .input,
+  .button {
+    font-size: 0.8rem; /* Adjust font size for better scaling */
+  }
+}
+
+/* Additional specific adjustments (consider as needed) */
+.input::-webkit-input-placeholder {
+  /* Target placeholder text for WebKit browsers */
+  color: #999;
+}
+
+.input:-moz-placeholder {
+  /* Target placeholder text for Mozilla browsers */
+  color: #999;
+}
+
+.input::-moz-placeholder {
+  /* Target placeholder text for older Mozilla browsers */
+  color: #999;
+}
+
+.input:placeholder-shown {
+  /* Target placeholder text for other browsers */
+  color: #999;
+}

@@ -1,0 +1,71 @@
+/* Baseline styles */
+.container {
+  display: flex; /* Maintain elements in a row */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  padding: 2em;
+  width: 100%; /* Ensure full width across devices */
+  margin-bottom: 2em; /* Add some margin for better spacing */
+}
+
+.login-form {
+  background-color: #f5f5f5; /* Light background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 2em;
+  width: 300px; /* Set fixed width for smaller screens */
+}
+
+h1 {
+  text-align: center; /* Center heading */
+  margin-bottom: 1em; /* Add some spacing below heading */
+}
+
+.form-group {
+  margin-bottom: 1em; /* Consistent spacing between form groups */
+}
+
+.form-control {
+  outline: none; /* Remove default outline */
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 4px; /* Consistent rounded corners */
+  padding: 0.5em 1em; /* Adjust padding for input fields */
+  font-size: 1rem; /* Adjust font size for readability */
+  box-sizing: border-box; /* Prevent content from overflowing the box */
+  width: 100%; /* Make input fields full width */
+}
+
+.btn-primary {
+  cursor: pointer;
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Consistent rounded corners */
+  padding: 0.5em 1em; /* Adjust padding for button text */
+  font-size: 1rem; /* Adjust font size for button text */
+  transition: background-color 0.2s ease-in-out; /* Add smooth hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #0062cc; /* Darken background on hover */
+}
+
+.error {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+  margin: 0; /* Remove default margins */
+  color: red; /* Error messages in red */
+}
+
+.register-link {
+  text-align: center; /* Center register link */
+  margin-top: 1em; /* Add some spacing above link */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%; /* Make form full width on smaller screens */
+  }
+}

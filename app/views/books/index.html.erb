@@ -1,25 +1,27 @@
 <p style="color: green"><%= notice %> </p>
-<%= stylesheet_link_tag "book_page"%>
 
 <div class="bookContainer">
+
+  <div id="books" class="flex flex-col gap-3">
+    <% @books.each do |book| %>
+      <div class="flex ">
+        <div>
+          <%= image_tag book.file.representation(resize_to_limit: [100, 100]).processed.url %>
+        </div>
+
+
+        <div class="flex">
+          <h1><%= link_to book.name, book %></h1>
+          <p><%= book.description %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
   <div>
     <%# Todo: Add topics section %>
   </div>
 
-  <div id="books">
-    <% @books.each do |book| %>
-      <div class="book_file_pdf">
-        <h1><%= link_to book.name, book %></h1>
-        <p><%= book.description %></p>
-
-        <div  class="book_file">
-          <%= render book.file.blob %>
-        </div>
-
-      </div>
-    <% end %>
-  </div>
 </div>
 
 

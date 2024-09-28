@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+}
+
+*/
+.bookContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.bookFile {
+  display: flex;
+}
+
+.book_info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 3em;
+}
+
+.book_file > * {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  object-fit: cover;
+  height: 500px;
+  overflow: hidden !important;
+}
+
+.bookLinks {
+  display: flex;
+}
+.bookLinks a {
+  background-color: blue;
+  color: white;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+}
+/* Baseline styles */
+.container {
+  display: flex; /* Maintain elements in a row */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  padding: 2em;
+  width: 100%; /* Ensure full width across devices */
+  margin-bottom: 2em; /* Add some margin for better spacing */
+}
+
+.login-form {
+  background-color: #f5f5f5; /* Light background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 2em;
+  width: 300px; /* Set fixed width for smaller screens */
+}
+
+h1 {
+  text-align: center; /* Center heading */
+  margin-bottom: 1em; /* Add some spacing below heading */
+}
+
+.form-group {
+  margin-bottom: 1em; /* Consistent spacing between form groups */
+}
+
+.form-control {
+  outline: none; /* Remove default outline */
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 4px; /* Consistent rounded corners */
+  padding: 0.5em 1em; /* Adjust padding for input fields */
+  font-size: 1rem; /* Adjust font size for readability */
+  box-sizing: border-box; /* Prevent content from overflowing the box */
+  width: 100%; /* Make input fields full width */
+}
+
+.btn-primary {
+  cursor: pointer;
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Consistent rounded corners */
+  padding: 0.5em 1em; /* Adjust padding for button text */
+  font-size: 1rem; /* Adjust font size for button text */
+  transition: background-color 0.2s ease-in-out; /* Add smooth hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #0062cc; /* Darken background on hover */
+}
+
+.error {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+  margin: 0; /* Remove default margins */
+  color: red; /* Error messages in red */
+}
+
+.register-link {
+  text-align: center; /* Center register link */
+  margin-top: 1em; /* Add some spacing above link */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%; /* Make form full width on smaller screens */
+  }
+}
+/* Baseline styles */
+.container {
+  display: flex;
+  flex-direction: row !important;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 2em;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  margin-bottom: 2em;
+  gap: 2em;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.child-1 h1 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0062cc;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Switch to vertical layout for smaller screens */
+  .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center; /* Center elements vertically */
+  }
+
+  .child {
+    width: 100%; /* Make children full width on smaller screens */
+    flex-direction: column; /* Stack elements vertically within child */
+  }
+
+  .child-1 h1 a,
+  .input,
+  .button {
+    font-size: 0.8rem; /* Adjust font size for better scaling */
+  }
+}
+
+/* Additional specific adjustments (consider as needed) */
+.input::-webkit-input-placeholder {
+  /* Target placeholder text for WebKit browsers */
+  color: #999;
+}
+
+.input:-moz-placeholder {
+  /* Target placeholder text for Mozilla browsers */
+  color: #999;
+}
+
+.input::-moz-placeholder {
+  /* Target placeholder text for older Mozilla browsers */
+  color: #999;
+}
+
+.input:placeholder-shown {
+  /* Target placeholder text for other browsers */
+  color: #999;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 1rem;
+}
+
+button{
+  cursor: pointer;
+  outline: none;
+}

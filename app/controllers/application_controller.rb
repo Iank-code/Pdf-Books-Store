@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
     include ActionController::Cookies
+    include ActiveStorage::SetCurrent
     rescue_from StandardError, with: :standard_error
 
 

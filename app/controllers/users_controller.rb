@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
+    binding.irb
     if user.save
       session[:user_id] = user.id
       # SendWelcomeEmailJob.set(wait: 10.second).perform_later(user)

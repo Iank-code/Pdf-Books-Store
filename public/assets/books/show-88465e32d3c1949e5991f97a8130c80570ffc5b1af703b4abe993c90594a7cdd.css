@@ -1,0 +1,46 @@
+.bookContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.bookFile {
+  display: flex;
+}
+
+.book_info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 3em;
+}
+
+.book_file > * {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  object-fit: cover;
+  height: 500px;
+  overflow: hidden !important;
+}
+
+.bookLinks {
+  display: flex;
+}
+.bookLinks a {
+  background-color: blue;
+  color: white;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+}

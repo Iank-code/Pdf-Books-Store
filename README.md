@@ -23,3 +23,9 @@ Things you may want to cover:
 
 * ...
 # Pdf-Books-Store
+## Setup
+To setup, use docker to run
+
+
+    sudo docker run --env-file .env pdf-book
+
